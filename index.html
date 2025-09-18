@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tarot del Programador</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Anime.js para animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <main>
+    
+    <!-- Pantalla 1: Intro -->
+    <section id="intro" class="screen active">
+        <div class="mystic-eye">
+            <div class="triangle"></div>
+                <div class="eye">
+                    <div class="eyelid">
+                        <div class="iris">
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="halo"></div>
+            <div class="particles"></div>
+        </div>
+
+      <h1>🔮 Tarot del Programador</h1>
+      <p>Bienvenido al Tarot que revela tu destino como coder.  
+      Descubre si hoy te acompañará el <em>Commit Supremo</em> o el <em>Bug Eterno</em>…</p>
+      <button id="startBtn" class="btn">Ver mi destino</button>
+    </section>
+
+    <!-- Pantalla 2: Cartas -->
+<!-- Pantalla de las cartas -->
+    <section id="cards" class="screen">
+        <h2>Elige tu destino...</h2>
+        <div id="cardContainer" class="card-container"></div>
+        <p id="cardText" class="hidden"></p>
+        <button id="donateBtn" class="btn hidden">Honrar al Oráculo 🙌</button>
+    </section>
+
+
+    <!-- Pantalla 3: Donación -->
+    <section id="donation" class="screen hidden">
+      <h2>✨ Gracias por consultar al Tarot ✨</h2>
+      <p>Si el destino te iluminó, honra al oráculo con una donación de 1 sol o más 🙏</p>
+      <img src="img/yape.png" alt="QR de donación" class="qr">
+      <div>
+        <button id="thanksBtn" class="btn">Gracias!</button>
+      </div>
+    </section>
+    
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
