@@ -61,10 +61,10 @@ startBtn.addEventListener('click', () => {
     card.innerHTML = `
       <div class="card-inner">
         <div class="card-front">
-          <img src="img/CardBack.png" alt="Dorso de carta">
+          <img src="img/CardBack.png" alt="Dorso de carta" loading="lazy">
         </div>
         <div class="card-back">
-          <img src="${cardData.img}" alt="Carta ${cardData.key}">
+          <img src="${cardData.img}" alt="Carta ${cardData.key}" loading="lazy">
         </div>
       </div>
     `;
