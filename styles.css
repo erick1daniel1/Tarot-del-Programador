@@ -35,6 +35,7 @@ p { margin-bottom: 20px; }
   height: 220px;
   perspective: 1000px;
   cursor: pointer;
+  transition: box-shadow 1.4s ease-in-out;
 }
 
 .card-inner {
@@ -201,4 +202,15 @@ p { margin-bottom: 20px; }
 @keyframes moveParticles {
   from { background-position: 0 0; }
   to { background-position: 200px 200px; }
+}
+
+.tarot-card.bueno.flipped {
+  box-shadow: 0 0 25px 10px rgba(255, 209, 102, 0.9); /* amarillo */
+  border-radius: 10px;
+}
+
+
+.tarot-card.malo.flipped {
+  box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.6); /* rojo */
+  border-radius: 10px;
 }
